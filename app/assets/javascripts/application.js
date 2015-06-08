@@ -13,4 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require ../../../vendor/assets/javascripts/metisMenu.min
+
+//= require sb-admin-2
+//= require bootstrap
+
+$(function() {
+  $("a[rel~=popover], .has-popover").popover();
+  $("a[rel~=tooltip], .has-tooltip").tooltip();
+});
